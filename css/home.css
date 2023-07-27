@@ -7,6 +7,52 @@ body {
     cursor: url('white-circle.ico'), auto;
 }
 
+
+
+.header {
+  /* margin-left: 180px;
+  margin-top: 30px; */
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin:0 2rem;
+}
+
+/* .bigTitle{
+  border: 1px solid red;
+  padding-top: 0;
+} */
+
+.aaa{
+  display: flex;
+  margin-top: 3rem;
+  /* border:1px solid red; */
+}
+
+.aaa div{
+  margin-left: 2rem;
+}
+
+/* .bigTitle
+{
+margin-left: -7rem;
+margin-top: -5rem;
+}
+
+.subTitle
+{
+margin-left: 35rem;   
+margin-top: -12.5rem;
+ }
+      
+.subSubTitle 
+{
+margin-left: 8rem;
+margin-top: -11rem;
+} */
+
+
+
 .menu {
 position:absolute;
 margin-top: 10rem;
@@ -32,36 +78,7 @@ margin-top: 0.8rem;
 /* main.css */
 
     
-.bigTitle,
-.subTitle,
-.subSubTitle 
-{
-display: inline-block;
-vertical-align: middle;
-}
-.bigTitle
-{
-margin-left: -7rem;
-margin-top: -5rem;
-}
 
-.subTitle
-{
-margin-left: 35rem;   
-margin-top: -12.5rem;
- }
-      
-.subSubTitle 
-{
-margin-left: 8rem;
-margin-top: -11rem;
-}
-
-.header {
-    margin-left: 180px;
-    margin-top: 30px;
-    color: white;
-}
 
 
 .img-container {
