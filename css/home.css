@@ -3,11 +3,46 @@ body {
     margin: 0;
     padding: 0;
     font-family: "GT-America", sans-serif;
-    font-size: 1rem;
-    cursor: url('white-circle.ico'), auto;
+    cursor: none;
 }
 
+.custom-cursor {
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, white, white 50%, transparent 50%);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.15s ease;
+  /* Center the cursor using transform */
+  transform: translate(-50%, -50%);
+}
 
+.custom-cursor.active {
+  /* 当鼠标位于图片上时显示胶囊形状 */
+  z-index: 9999;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  background-color:white;
+
+}
+
+.custom-cursor.active::after {
+  /* 在胶囊形状中添加“Move”文字 */
+  content: "explore";
+  color: black;
+  font-size: 25px;
+  position: absolute; /* 添加position属性 */
+  top: 50%; /* 调整垂直位置到中心 */
+  left: 50%; /* 调整水平位置到中心 */
+  transform: translate(-50%, -50%); /* 将文字居中 */
+  transition: opacity 0.3s ease; 
+}
 
 .header {
   /* margin-left: 180px;
@@ -18,10 +53,6 @@ body {
   margin:0 2rem;
 }
 
-/* .bigTitle{
-  border: 1px solid red;
-  padding-top: 0;
-} */
 
 .aaa{
   display: flex;
@@ -33,30 +64,11 @@ body {
   margin-left: 2rem;
 }
 
-/* .bigTitle
-{
-margin-left: -7rem;
-margin-top: -5rem;
-}
-
-.subTitle
-{
-margin-left: 35rem;   
-margin-top: -12.5rem;
- }
-      
-.subSubTitle 
-{
-margin-left: 8rem;
-margin-top: -11rem;
-} */
-
-
 
 .menu {
 position:absolute;
-margin-top: 10rem;
-margin-left: 5rem;
+margin-top: 12rem;
+margin-left: 2.5rem;
 }
 
 /* navigation.css */
@@ -76,39 +88,118 @@ li{
 margin-top: 0.8rem;
 }
 /* main.css */
-
-    
+#tickets-link,
+#runway-link,
+#artwork-link,
+#about-link {
+  cursor: none;
+  transition: color 0.3s ease;
+}
 
 
 
 .img-container {
-    text-align: center;
-  
+  margin-left: 8rem;
+  text-align: center;
 }
 
 .about-red
 {
-margin-top: -2rem;
-margin-left: 13.5rem;
-
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 658px;
+height:  434px;
+/* border: 1px solid #ccc; */
 }
 
 .artwork-yellow-orange
 {
 margin-top: -14rem;
-margin-right: 30rem;
+margin-left: 7.3rem;
+width: 393px;
+height:  336px;
+/* border: 1px solid #ccc; */
 
 }
 .runway-blue-purple
 {
 margin-top: -30rem;
-margin-left: 58.5rem;
-
+margin-left: 54.2rem;
+width: 307px;
+height: 158px;
+/* border: 1px solid #ccc; */
 }
 
 .tickets-green
 {
 margin-top: 5rem;
-margin-left: 30rem;
+margin-left: 45rem;
+width: 228px;
+height: 296px;
+/* border: 1px solid #ccc; */
 }
-    
+
+ .artwork-yellow-orange img,
+  .runway-blue-purple img,
+  .tickets-green img {
+    /* Set initial opacity to 0 */
+    opacity: 0;
+    position: relative;
+  }
+
+  /* Define the animation for the images */
+  @keyframes slideAndFadeInFromBottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideAndFadeInFromRight {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideAndFadeInFromLeft {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .artwork-yellow-orange img {
+    animation: slideAndFadeInFromLeft 1.5s ease forwards;
+  }
+  .runway-blue-purple img {
+    animation: slideAndFadeInFromRight 2s ease forwards;
+  }
+
+  .tickets-green img {
+    animation: slideAndFadeInFromBottom 2.5s ease forwards;
+  }
+  .artwork-yellow-orange img,
+  .about-red img {
+    transition: opacity 0.3s ease;
+  }
+  
+
+.red-mask {
+  position: absolute;
+  background-color: red;
+  opacity: 0; /* 初始透明度为0，即隐藏遮罩 */
+}
