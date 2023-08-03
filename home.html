@@ -45,19 +45,13 @@
     </ul>
   </div>
 
-<<<<<<< Updated upstream
   
   <div class="img-container">
-
+    <div class="moving-image"> 
     <div class="about-red"> <img src="images/about-red.png" width="658px" alt="about-red">
     </div>
-    <div class="red-mask"></div> 
+    <!-- <div class="red-mask"></div>  -->
 
-=======
-
-  <div class="img-container"> 
-    <div class="about-red"> <img src="images/about-red.png" width="658px" alt="about-red"></div>
->>>>>>> Stashed changes
     <div class="artwork-yellow-orange"><img src="images/artwork-yellow-orange.png" width="393px"
         alt="artwork-yellow-orange"></div>
 
@@ -70,18 +64,11 @@
     <div class="tickets-green"> <img src="images/tickets-green.png" width="227px" 
       alt="tickets-green">
     </div>
-
+   </div>
   </div>
 
   <div class="footer-container">
-    <ul>
-      <li>
-        <h3><a href="####" id="style-guide">STYLEGUIDE</a></h3>
-      </li>
-      <li>
-        <h3><a href="####" id="reference">REFERENCE</a></h3>
-      </li>
-    </ul>
+   
   </div>
 
 
@@ -100,9 +87,11 @@
     // 监听鼠标移动事件
     document.addEventListener('mousemove', (e) => {
   
-      // 更新.custom-cursor元素的位置与鼠标位置一致
-      customCursor.style.left = `${e.clientX}px`;
-      customCursor.style.top = `${e.clientY}px`;
+    // 更新.custom-cursor元素的位置与鼠标位置一致
+    customCursor.style.left = `${e.clientX + scrollX}px`;
+    customCursor.style.top = `${e.clientY + scrollY}px`;
+    customGifCursor.style.left = `${e.clientX + scrollX}px`;
+    customGifCursor.style.top = `${e.clientY + scrollY}px`;
   
       // 检查鼠标是否位于图片上
       if (isMouseOverImage(e, redAboutImage) || isMouseOverImage(e, yellowOrangeImage)

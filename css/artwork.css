@@ -1,7 +1,10 @@
 .navi {
     display: flex;
+    position: fixed;
+    width: 100vw;
     justify-content: space-between;
     margin: 0 3rem;
+    /* border: 1px solid red; */
 }
 
 .navi-text {
@@ -27,30 +30,101 @@
 /* graphic sec  */
 .navi-graphic {
     text-align: center;
-    margin-top: 4rem;
+    padding: 1.5rem 6rem;
+    /* border: 1px solid red; */
 }
 
 
-
-/* .artwork {
+.artwork {
+    /* position: absolute; */
     border: 1px solid white;
-    margin-top: -1.4rem;
-    margin-right: 3rem;
-} */
+    margin-left: -2rem;
+    padding: 1rem 1.5rem;
+    margin-right:3.5rem;
+    margin-top: 2rem;
+}
+
+.artwork:hover{
+    border: 1px solid rgba(245, 195, 70, 1);
+    color: rgba(245, 195, 70, 1);
+    background-color: rgba(245, 195, 70, 1);
+}
+
 
 .about {
     border: 1px solid white;
-    margin:1.5rem 2rem;
+    margin-top: -5rem;
+    padding:1rem 2rem;
 }
 
-/* .ticket {
+.about:hover{
+    border: 1px solid rgba(233, 85, 116, 1);
+    color: rgba(233, 85, 116, 1);
+    background-color: rgba(233, 85, 116, 1);
+}
+
+.ticket {
     border: 1px solid white;
-    margin-top: 0.05rem;
-    margin-left: 0.3rem;
+    /* margin-top: 0.05rem; */
+    margin-top: -0.5rem;
+    margin-left: 3rem; 
+    margin-right: 0.3rem;
+    padding: 0.9rem 0.3rem;
+}
+
+.ticket:hover{
+    border: 1px solid rgba(79, 170, 50, 1);
+    color: rgba(79, 170, 50, 1);
+    background-color: rgba(79, 170, 50, 1);
 }
 
 .runway {
+    position: absolute;
     border: 1px solid white;
-    margin-top: -0.3rem;
-    margin-left: 0.585rem;
-} */
+    margin-top: -5.4rem;
+    margin-left: 4rem;
+    padding: 0.1rem 1rem;
+} 
+
+.runway:hover{
+    border: 1px solid rgba(59, 121, 245, 1);
+    color: rgba(59, 121, 245, 1);
+    background-color: rgba(59, 121, 245, 1);
+}
+/* end of navi  */
+
+
+/* scroll sec  */
+.main-scroll-div {
+    position:fixed;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+
+.scroll-images {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content:center;
+    align-items: center; */
+
+    /* overflow: auto; */
+
+    /* position: relative; */
+    /* scroll-behavior:smooth; */
+}
+
+
+.child {
+    min-width: 30vw;
+    height: 60vh;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+}

@@ -102,13 +102,16 @@ margin-top: 0.8rem;
   margin-left: 8rem;
   text-align: center;
 }
-
-.about-red
-{
-margin: 0 auto;
+.moving-image{
+ margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: center;
+border: 1px solid #ccc;
+}
+.about-red
+{
+transform: translate(70%,0%);
 width: 658px;
 height:  434px;
 /* border: 1px solid #ccc; */
@@ -116,8 +119,9 @@ height:  434px;
 
 .artwork-yellow-orange
 {
-margin-top: -14rem;
-margin-left: 7.3rem;
+/* margin-top: -14rem;
+margin-left: 7.3rem; */
+transform: translate(-105%,49%);
 width: 393px;
 height:  336px;
 /* border: 1px solid #ccc; */
@@ -125,8 +129,9 @@ height:  336px;
 }
 .runway-blue-purple
 {
-margin-top: -30rem;
-margin-left: 54.2rem;
+/* margin-top: -30rem;
+margin-left: 54.2rem; */
+transform: translate(-18.5%,-50%);
 width: 307px;
 height: 158px;
 /* border: 1px solid #ccc; */
@@ -134,8 +139,9 @@ height: 158px;
 
 .tickets-green
 {
-margin-top: 5rem;
-margin-left: 45rem;
+/* margin-top: 5rem;
+margin-left: 45rem; */
+transform: translate(-250%,80%);
 width: 228px;
 height: 296px;
 /* border: 1px solid #ccc; */
