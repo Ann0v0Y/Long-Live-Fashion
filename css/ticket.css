@@ -1,0 +1,56 @@
+
+*{
+    border:1px solid red;
+}
+
+
+.ticket-sec{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.ticket-title{
+    flex:45vw;
+    text-align: center;
+}
+
+
+.table-container{
+    flex:55vw;
+}
+
+/* calendar section  */
+.table-container {
+    margin: 2rem 4rem;
+    /* margin-left: 4rem; */
+    color:white;
+  }
+  
+  .calendar-table {
+    /* width: 30%; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    padding:1.3rem 2.5rem;
+    text-align: center;
+  
+  }
+  
+  .calendar-table td:hover {
+    background-color:  rgba(79, 170, 50, 1);
+    color: white;
+  }
+  
+  .selected {
+    background-color: #C3A583;
+    color: white;
+  }
+  
+  .calendar-table th {
+    font-weight: bold;
+  }
+  

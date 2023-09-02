@@ -1,0 +1,94 @@
+.navi {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+    margin: 0 3rem;
+    /* border: 1px solid red; */
+}
+
+.navi-text {
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.navi-text h2 {
+    font-size: 1.5rem;
+}
+
+.navi-text h3 {
+    font-size: 1rem;
+    color: orange;
+    margin-top: 3rem;
+}
+
+.navi-text a {
+    margin-right: 8rem;
+}
+
+
+/* graphic sec  */
+.navi-graphic {
+    text-align: center;
+    padding: 1.5rem 6rem;
+    /* border: 1px solid red; */
+}
+
+
+.artwork {
+    /* position: absolute; */
+    border: 1px solid white;
+    margin-left: -2rem;
+    padding: 1rem 1.5rem;
+    margin-right:3.5rem;
+    margin-top: 2rem;
+}
+
+.artwork:hover{
+    border: 1px solid rgba(245, 195, 70, 1);
+    color: rgba(245, 195, 70, 1);
+    background-color: rgba(245, 195, 70, 1);
+}
+
+
+.about {
+    border: 1px solid white;
+    margin-top: -5rem;
+    padding:1rem 2rem;
+}
+
+.about:hover{
+    border: 1px solid rgba(233, 85, 116, 1);
+    color: rgba(233, 85, 116, 1);
+    background-color: rgba(233, 85, 116, 1);
+}
+
+.ticket {
+    border: 1px solid white;
+    /* margin-top: 0.05rem; */
+    margin-top: -0.5rem;
+    margin-left: 3rem; 
+    margin-right: 0.3rem;
+    padding: 0.9rem 0.3rem;
+}
+
+.ticket:hover{
+    border: 1px solid rgba(79, 170, 50, 1);
+    color: rgba(79, 170, 50, 1);
+    background-color: rgba(79, 170, 50, 1);
+}
+
+.runway {
+    position: absolute;
+    border: 1px solid white;
+    margin-top: -5.4rem;
+    margin-left: 4rem;
+    padding: 0.1rem 1rem;
+} 
+
+.runway:hover{
+    border: 1px solid rgba(59, 121, 245, 1);
+    color: rgba(59, 121, 245, 1);
+    background-color: rgba(59, 121, 245, 1);
+}
+/* end of navi  */

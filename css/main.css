@@ -1,5 +1,5 @@
 body {
-    cursor: url('white-circle.ico'), auto;
+    cursor: none;
 }
 
 h1 {
@@ -19,3 +19,8 @@ h3 {
     font-size: 1rem;
     color: white
 }
+
+
+
+
+
