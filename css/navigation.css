@@ -1,6 +1,6 @@
 .navi {
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     justify-content: space-between;
     margin: 0 3rem;
